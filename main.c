@@ -8,7 +8,7 @@ int main() {
     if (array != NULL) {
         Array2Dim_Fill(array);
 
-        printf("���������� �������:\n");
+        printf("Ñîäåðæèìîå ìàññèâà:\n");
         for (int i = 0; i < array->rows; ++i) {
             for (int j = 0; j < array->cols; ++j) {
                 printf("%d ", array->data[i * array->cols + j]);
@@ -17,6 +17,9 @@ int main() {
         }
 
         Array2Dim_Free(array);
+    }
+    else {
+        printf("Ошибка при создании структуры.\n");
     }
 
     return 0;
