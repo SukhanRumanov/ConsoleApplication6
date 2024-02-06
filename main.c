@@ -20,6 +20,7 @@ int main() {
     }
     else {
         printf("Ошибка при создании структуры.\n");
+        return 0;
     }
 
     return 0;
